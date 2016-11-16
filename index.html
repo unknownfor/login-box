@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="lib/jquery-3.0.0.min.js" type="application/javascript"></script>
+    <script src="login.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>表单插件</title>
+</head>
+<body>
+        <div class="login-box">
+            <div class="head">
+                <span class="head-info" id="login-tip">用户登录</span>
+                <span class="head-info" id="login-close">×</span>
+            </div>
+            <!--请输入账号-->
+            <div class="item">
+                <input type="text" id="username" name="username" class="item-text" autocomplete="off" placeholder="请输入账号" >
+            </div>
+            <!--请输入密码-->
+            <div class="item">
+                <input type="password" id="password" name="password" class="item-text" autocomplete="off" placeholder="请输入密码">
+            </div>
+            <!--登录按钮-->
+            <div class="item">
+                <input type="submit" value="登录" class="item-submit active">
+            </div>
+        </div>
+</body>
+<script type="text/javascript">
+    $(function() {
+        //最简单调用方法,带参数的调用方法
+        $(".login").login({
+            countName:mayoi,
+            password:123,
+            callBack:function(num){
+
+            }
+        });
+        // 内部方法调用
+        function getLoginSuccess(index) {
+            $.post('http://123',{pageIndex:index,perPageCount:2},function(result) {
+                result;
+            });
+        }
+    });
+</script>
+</html>

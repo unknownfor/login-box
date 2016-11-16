@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #676767;
+    text-align: center;
+    position: relative;
+}
+.login-box {
+    background-color: #fff;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    border-radius: 5px;
+}
+.head {
+    width: 100%;
+    height: 35px;
+    background-color: #CC0114;
+    color: #e5e5e5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.head-info {
+    line-height: 35px;
+    width: 100%;
+}
+#login-tip {
+    width: 82%;
+    heigth: 100%;
+    display: inline-block;
+    text-align: left;
+}
+#login-close {
+    width: 13%;
+    height: 100%;
+    display: inline-block;
+    text-align: right;
+    cursor: pointer;
+}
+.item {
+    width: 100%;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.item-text {
+    width: 240px;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    color: #e5e5e5;
+}
+.item-submit {
+    width: 240px;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background-color: #292929;
+    color: #ffffff;
+    cursor: pointer;
+}
+#username {
+    margin-top: 30px;
+}
+.active {
+/*outline: thin dotted;*/
+/*outline: 5px auto -webkit-focus-ring-color;*/
+outline-offset: -5px;
+}
+.hide {
+    display: none;
+}
