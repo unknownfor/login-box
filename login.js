@@ -27,30 +27,17 @@
                     //文本框失去焦点后
                     $('input').blur(function () {
                         var $parent = $(this).parent();
-                        $parent.find(".formtips").remove();
+                        $parent.find(".formTips").remove();
                         //正则表达式判断手机号的合法性
-                        //判断输入框内是否填入数据，输入框失去焦点则提示
                         if ($(this).is('#username')) {
                             if (this.value == "" && !/^[0-9]+$/.test(this.value) || this.value.length < 11) {
                                 var errorMsg = '*请输入正确的手机号码.';
-                                $parent.append('<span class="formtips onError">' + errorMsg + '</span>');
+                                $parent.append('<span class="formTips onError">' + errorMsg + '</span>');
                             } else {
                                 var okMsg = '输入正确.';
-                                $parent.append('<span class="formtips onSuccess">' + okMsg + '</span>');
+                                $parent.append('<span class="formTips onSuccess">' + okMsg + '</span>');
                             }
                         }
-                            //验证邮件
-                        if ($(this).is('#email')) {
-                                if (this.value == "" || ( this.value != "" && !/.+@.+\.[a-zA-Z]{2,4}$/.test(this.value) )) {
-                                    var errorMsg = '请输入正确的E-Mail地址.';
-                                    $parent.append('<span class="formtips onError">' + errorMsg + '</span>');
-                                } else {
-                                    var okMsg = '输入正确.';
-                                    $parent.append('<span class="formtips onSuccess">' + okMsg + '</span>');
-                                }
-                            }
-                    }).keyup(function(){
-                        $(this).triggerHandler("blur");
                     }).focus(function(){
                         $(this).triggerHandler("blur");
                     });

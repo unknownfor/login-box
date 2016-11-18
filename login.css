@@ -53,13 +53,13 @@ a{
     margin-top: 10px;
 }
 .item-text {
-    width: 240px;
+    width: 250px;
     height: 30px;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
 }
 .item-submit {
-    width: 240px;
+    width: 250px;
     height: 30px;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
@@ -75,4 +75,10 @@ a{
 }
 .more {
     display: inline-block;
+    width: 33%;
+}
+.formTips {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
 }
