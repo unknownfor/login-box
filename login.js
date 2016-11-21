@@ -18,8 +18,8 @@
 
                 function init() {
                     judgeNum(),
-                        clickClose(),
-                        showBtn();
+                    clickClose(),
+                    showBtn();
                 };
 
                 //判断手机号的合法
@@ -28,9 +28,10 @@
                     $('input').blur(function () {
                         var $parent = $(this).parent();
                         $parent.find(".formTips").remove();
-                        //正则表达式判断手机号的合法性
+                        //
                         if ($(this).is('#username')) {
-                            if (this.value == "" && !/^[0-9]+$/.test(this.value) || this.value.length < 11) {
+                            //值为空，输入不为0-9的数字，输入值不等于11
+                            if (this.value == "" || ! /^[0-9]+$/.test(this.value) || this.value.length != 11) {
                                 var errorMsg = '*请输入正确的手机号码.';
                                 $parent.append('<span class="formTips onError">' + errorMsg + '</span>');
                             } else {

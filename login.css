@@ -10,7 +10,7 @@ a{
     text-decoration: none;
     color: #212121;
 }
-.login-box {
+#login-box {
     background-color: #fff;
     width: 516px;
     height: 300px;
@@ -52,7 +52,7 @@ a{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.item-text {
+.itemText {
     width: 250px;
     height: 30px;
     border: 1px solid #e5e5e5;
